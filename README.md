@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # node-js-getting-started
 
 A barebones Node.js app using [Express 4](http://expressjs.com/).
@@ -42,3 +43,7 @@ For more information about using Node.js on Heroku, see these Dev Center article
 # bibleScrolls
 Display Bible verses one at a time in various languages
 >>>>>>> github/master
+=======
+# bibleScrolls
+NodeJS Angular Bootstrap Project displays bible verses with background image
+>>>>>>> f0a91d03c52b6237f2457ccc819c7c074e0b2a69
