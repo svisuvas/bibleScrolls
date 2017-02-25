@@ -22,8 +22,29 @@
 <div ng-app='' class="container">
 	<p>Name : <input type="text" ng-model="name"></p>
 	<h1>Hello {{name}}</h1>
-</div>
+	
+	<div ng-controller='' class="section">
+		<h3>{{headingTitle}}</h3>
+		<!-- 	<div class="gallery-section"> -->
+		<!-- 		<img class="photo" src="./resources/static/images/images.jpeg" /> <img -->
+		<!-- 			class="photo" src="./resources/static/images/images2.jpeg"> -->
+		<!-- 	</div> -->
 
+		<div class="gallery-section" id="slides_control">
+			<div>
+				<carousel interval="myInterval"> <slide
+					ng-repeat="slide in slides" active="slide.active"> <img
+					ng-src="{{slide.image}}">
+				<div class="carousel-caption">
+					<h4>{{slide.verse}}</h4>
+				</div>
+				</slide> </carousel>
+			</div>
+
+		</div>
+	</div>
+
+</div>
 
 <div class="container">
   <div class="alert alert-info text-center" role="alert">
@@ -66,7 +87,25 @@
     Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
   </div>
 </div>
+<script type="text/javascript">
 
+var app = angular.module('app', ['ngRoute','ngResource', 'ui.bootstrap']);
+
+app.controller('carouselController', function($scope) {
+	$scope.headingTitle = "Living Word Bible Ministry Carousel";
+	$scope.myInterval = 10000;
+	$scope.slides = [
+		{image: './resources/static/images/images.jpeg', 
+		verse:'We know that in everything God works for good with those who love him, who are called according to his purpose. (Romans 8:28)'},
+		{image: './resources/static/images/images001.jpg', 
+		verse:'As a father pities his children, so the Lord pities those who fear him. (Psalms 103:13)'}
+	];
+});		
+
+$(document).ready(function(){
+ 
+});
+</script
 
 </body>
 </html>

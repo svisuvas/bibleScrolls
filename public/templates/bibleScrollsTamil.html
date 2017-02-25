@@ -1,0 +1,19 @@
+
+<div class="row">
+	
+	
+	<div class="gallery-section" id="slides_control">
+		<div>
+			<carousel interval="myInterval"> <slide
+				ng-repeat="slide in slides" active="slide.active"> <img
+				ng-src="{{slide.image}}">
+			<div class="carousel-caption">
+				<h6>{{slide.verse}}</h6>
+			</div>
+			</slide> </carousel>
+		</div>
+
+	</div>
+	
+</div>
+

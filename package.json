@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
+  "name": "bibleScrolls",
   "version": "0.2.5",
-  "description": "A sample Node.js app using Express 4",
+  "description": "An AngularJS Bootstrap App that scrolls Bible verses over beautiful background images.",
   "engines": {
     "node": "5.9.1"
   },
@@ -10,12 +10,18 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "angular": "~1.4.8",
+    "angular-resource": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "bootstrap-css-only": "~3.3.6",
+	"pg": "4.x",
+    "cool-ascii-faces": "1.3.4",
     "ejs": "2.4.1",
     "express": "4.13.3"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/svisuvas/bibleScrolls"
   },
   "keywords": [
     "node",
